@@ -10,16 +10,17 @@ const Menu = () => {
         <div className="">
             <div>
                 <div className={`${DisplayMenuButton ? 'opacity-100' : 'opacity-0'} logo-wrapper`}>
-                    <svg
+                    <svg href='/'
                         width={400}
                         viewBox="0 0 400 150"
-                        className="logo"
+                        className="logo cursor-pointer"
                         xmlns="http://www.w3.org/2000/svg"
                     >
                         <path d="M20 120 L100 40 L180 120" />
                         <path d="M120 120 L200 40 L280 120" />
                         <path d="M220 120 L300 40 L380 120" />
                     </svg>
+
                 </div>
             </div>
 
@@ -43,6 +44,7 @@ const Menu = () => {
                     {["HOME", "LISTINGS", "LET'S MOVE", "ABOUT US"].map((item, index) => (
                         <span
                             key={index}
+                            onClick={() => setOpen(!open)}
                             className={` text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-semibold transform transition-all duration-200
           ${open ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"}`}
                             style={{
