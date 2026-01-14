@@ -5,6 +5,7 @@ import SmoothScrollbar from "@/components/Smooth-Scrollbar";
 
 import TitlePage from "@/components/home/TitlePage";
 import ProfileInfoPage from "@/components/home/ProfileInfoPage";
+import OurServicesPage from "@/components/home/OurServicesPage";
 export default function Home() {
 
   return (
@@ -13,6 +14,8 @@ export default function Home() {
       <SmoothScrollbar>
         <div className="w-full h-screen  font-sans  text-white ">
           <TitlePage />
+          <ProfileInfoPage />
+          <OurServicesPage />
           <ProfileInfoPage />
         </div>
       </SmoothScrollbar >
