@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 const ProfileInfoPage = () => {
     return (
-        <div className="w-full min-h-screen py-16">
+        <div className="w-full border-t-[5px] border-t-white/10  text-white py-16">
             <div className="w-[90%] md:w-[85%] mx-auto flex flex-col lg:flex-row items-start justify-between gap-10">
 
                 {/* LEFT */}
