@@ -8,7 +8,7 @@ const PartnersIconsPage = () => {
         { src: "/imageForSnakeAnimation/p4.png", alt: "Realtor" },
     ];
     return (
-        <section className="w-full bg-black py-12">
+        <section className="w-full bg-white py-12">
             <div className="max-w-[1400px] mx-auto">
                
                 <div className="ticker-wrap w-full flex">

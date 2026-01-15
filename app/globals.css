@@ -60,7 +60,7 @@
   z-index: 9999;
   animation: moveToTop 1s ease forwards;
   animation-delay: 1.5s;
-  /* after draw animation */
+ 
 }
 
 
@@ -106,7 +106,7 @@
   transform: scale(1.05);
   animation: heroShrink 1.2s ease forwards;
   animation-delay: 1.2s;
-  /* ⬅ matches logo timing */
+
 }
 
 
@@ -125,14 +125,14 @@
   }
 }
 
-/* Text initial state */
+
 .hero-text .line {
   opacity: 0;
   transform: translateY(30px);
   animation: textReveal 0.6s ease-out forwards;
 }
 
-/* Staggered entrance (after hero animation) */
+
 .hero-text .line-1 {
   animation-delay: 2.2s;
 }
@@ -236,14 +236,13 @@
 
 
 
-/* Track (the background) */
-/* Track */
+
 .scrollbar-track {
   background: transparent !important;
   width: 5px !important;
 }
 
-/* Thumb */
+
 .scrollbar-thumb {
   background: rgba(255, 255, 255, 0.267) !important;
   border-radius: 4px !important;
@@ -251,7 +250,7 @@
   transition: all;
 }
 
-/* Hover effect (works without !important usually) */
+
 .scrollbar-thumb:hover {
   background: linear-gradient(to bottom, #519872, #3b5249) !important;
 }
@@ -294,35 +293,32 @@
 
 
 
-/* globals.css */
-
-/* Define the sliding animation */
+/* animation in partners logo */
 @keyframes scroll-snake {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%); /* Moves exactly half the width */
+    transform: translateX(-50%); 
   }
 }
 
-/* The outer window with fading edges */
+
 .ticker-wrap {
   overflow: hidden;
   user-select: none;
-  /* Creates the fade effect on left and right sides */
   mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
   -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
-/* The long track that actually moves */
+
 .ticker-track {
   display: flex;
-  width: max-content; /* Forces content to stay in one long line */
-  animation: scroll-snake 25s linear infinite; /* Adjust '25s' to change speed */
+  width: max-content; 
+  animation: scroll-snake 25s linear infinite; 
 }
 
-/* Pause animation when user hovers over the slider */
+
 .ticker-wrap:hover .ticker-track {
   animation-play-state: paused;
 }

@@ -86,7 +86,7 @@ const GetItSoldPage: React.FC = () => {
     };
 
     return (
-        <section className="relative w-full bg-black py-12 md:py-16 overflow-hidden group/section">
+        <section className="relative w-full bg-[#202020] py-12 md:py-16 overflow-hidden group/section">
 
             {/* --- Navigation Buttons (Hidden on Mobile) --- */}
             <button
