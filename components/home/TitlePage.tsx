@@ -10,15 +10,15 @@ const TitlePage = () => {
                     className="absolute inset-0 w-full h-full object-cover opacity-80 brightness-60"
                 />
                 <div className="hero-text absolute inset-0 flex items-center justify-center flex-col text-white">
-                    <span className="line line-1 [text-shadow:.5px_.5px_.5px_black] [-webkit-text-stroke:0.2px_black] sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-sans font-semibold leading-none">
+                    <span className="line line-1 [text-shadow:.5px_.5px_.5px_black] [-webkit-text-stroke:0.2px_black] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-sans font-semibold leading-none">
                         MARCI METZGER - THE RIDGE REALTY GROUP
                     </span>
 
-                    <span className="line line-2 uppercase [text-shadow:.5px_.5px_.5px_black] [-webkit-text-stroke:0.2px_black] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-sans font-semibold leading-none">
+                    <span className="line line-2 uppercase [text-shadow:.5px_.5px_.5px_black] [-webkit-text-stroke:0.2px_black] text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-sans font-semibold leading-none">
                         Pahrump Realtor
                     </span>
                     <div className="mt-3 flex items-center gap-2">
-                        <a href="tel:(206) 919-6886" className="transition-all duration-500 line line-3 text-white bg-black hover:bg-white  hover:text-black active:bg-white  active:text-black   px-10 py-4 cursor-pointer flex items-center justify-center rounded-[25px] ">
+                        <a href="tel:(206) 919-6886" className="px-10 py-4 border border-white text-white font-bold tracking-[0.15em] text-sm hover:bg-white hover:text-black active:bg-white active:text-black transition-all duration-300 uppercase">
                             CALL NOW
                         </a>
 

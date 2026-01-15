@@ -61,7 +61,7 @@ const SearchListPage = () => {
 
                        
                         <div className="col-span-2 md:col-span-2">
-                            <button className="w-full h-[50px] cursor-pointer bg-white/50 hover:bg-white text-gray-800 font-bold text-sm tracking-widest uppercase rounded shadow-lg transition-all duration-300">
+                            <button className="w-full h-[50px] bg-black/10 backdrop-blur-md cursor-pointer border border-white text-white font-bold tracking-[0.15em] text-sm hover:bg-white hover:text-black active:bg-white active:text-black transition-all duration-300 uppercase">
                                 Search Now
                             </button>
                         </div>
