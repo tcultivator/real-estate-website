@@ -16,7 +16,7 @@ export default function Home() {
           <TitlePage />
           <ProfileInfoPage />
           <OurServicesPage />
-          <ProfileInfoPage />
+          
         </div>
       </SmoothScrollbar >
     </div>

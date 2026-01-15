@@ -24,11 +24,11 @@ export default function SmoothScrollbar({ children }: { children: React.ReactNod
             const currentScrollY = offset.y;
 
             if (currentScrollY > lastScrollY) {
-                console.log('down')
+                
                 setMenuButtonDisplay(false)
             }
             else if (currentScrollY < lastScrollY) {
-                console.log('up')
+                
                 setMenuButtonDisplay(true)
             };
 
