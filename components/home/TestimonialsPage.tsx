@@ -148,10 +148,10 @@ const TestimonialsPage = () => {
                     {REVIEWS.map((review) => (
                         <div
                             key={review.id}
-                            className="min-w-[300px] md:min-w-[350px] max-w-[350px] flex-shrink-0 snap-center bg-transparent"
+                            className="min-w-[300px] max-w-[300px] md:min-w-[350px] md:max-w-[350px] flex-shrink-0 snap-center"
                         >
                             {/* Card Header: Avatar & Name */}
-                            <div className="flex items-start justify-between mb-4">
+                            <div className="flex items-start justify-between mb-4  ">
                                 <div className="flex gap-4">
                                     {/* Avatar */}
                                     <div className={`w-12 h-12 rounded-full ${review.bgColor} flex items-center justify-center text-white font-medium text-xl`}>
@@ -186,7 +186,7 @@ const TestimonialsPage = () => {
                             {/* Text Body with Custom Scrollbar */}
                             <div className="relative">
                                 
-                                <div className="h-36 overflow-y-auto pr-3 text-gray-700 text-sm leading-relaxed custom-scrollbar font-sans">
+                                <div className="h-50 max-h-50 overflow-y-auto pr-3 text-gray-700 text-sm leading-relaxed custom-scrollbar font-sans">
                                     {review.text}
                                 </div>
                             </div>
@@ -209,7 +209,7 @@ const TestimonialsPage = () => {
             <div className="flex justify-center gap-2 mt-4">
                 
                 <div className={`w-2 h-2 rounded-full transition-colors ${activeIndex === 0 ? 'bg-[#1a3dbf]' : 'bg-gray-300'}`}></div>
-                <div className={`w-2 h-2 rounded-full transition-colors ${activeIndex > 0 ? 'bg-[#1a3dbf]' : 'bg-gray-300'}`}></div>
+                <div className={`w-2 h-2 rounded-full transition-colors ${activeIndex > 2 ? 'bg-[#1a3dbf]' : 'bg-gray-300'}`}></div>
             </div>
 
            

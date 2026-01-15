@@ -3,15 +3,15 @@ import { MdOutlineArrowDownward } from "react-icons/md";
 
 const TitlePage = () => {
     return (
-        <div className="w-full   relative h-screen flex items-center justify-center overflow-hidden">
+        <div className="w-full   relative h-[100dvh] md:h-screen flex items-center justify-center overflow-hidden">
             <div className="hero relative bg-black aspect-video w-full overflow-hidden">
                 <img
                     src="/test1.webp"
                     className="absolute inset-0 w-full h-full object-cover opacity-80 brightness-60"
                 />
                 <div className="hero-text absolute inset-0 flex items-center justify-center flex-col text-white">
-                    <span className="line line-1 [text-shadow:.5px_.5px_.5px_black] [-webkit-text-stroke:0.2px_black] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-sans font-semibold leading-none">
-                        MARCI METZGER - THE RIDGE REALTY GROUP
+                    <span className="flex flex-col justify-center text-center md:gap-2 md:flex-row line line-1 [text-shadow:.5px_.5px_.5px_black] [-webkit-text-stroke:0.2px_black] text-2xl md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-sans font-semibold leading-none">
+                        <span>MARCI METZGER</span> <span className='hidden md:block'>-</span> <span>THE RIDGE REALTY GROUP</span>
                     </span>
 
                     <span className="line line-2 uppercase [text-shadow:.5px_.5px_.5px_black] [-webkit-text-stroke:0.2px_black] text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-sans font-semibold leading-none">
@@ -30,10 +30,10 @@ const TitlePage = () => {
             <div className='w-[95%] p-1 absolute bottom-5 flex px-3 items-center justify-center md:justify-between'>
                 <span className='flex flex-col justify-center md:flex-row items-center gap-2 uppercase text-white/50 text-sm lg:text-lg 2xl:text-xl'>
                     scroll down
-                    <MdOutlineArrowDownward className='text-2xl'/>
+                    <MdOutlineArrowDownward className='text-2xl animate-up-down' />
                 </span>
                 <span className='hidden md:block uppercase text-white/50 text-sm lg:text-lg 2xl:text-xl'>
-                     Nevada, United States
+                    Nevada, United States
                 </span>
             </div>
         </div>

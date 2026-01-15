@@ -15,25 +15,25 @@ const Menu = () => {
     const [open, setOpen] = useState(false)
     const DisplayMenuButton = useMenuStore((state) => state.DisplayMenuButton)
 
-   
+
 
     return (
         <div className="">
-            <div>
-                <div className={`${DisplayMenuButton ? 'opacity-100' : 'opacity-0'} logo-wrapper`}>
-                    <svg href='/'
-                        width={200}
-                        viewBox="0 0 400 150"
-                        className="logo cursor-pointer"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path d="M20 120 L100 40 L180 120" />
-                        <path d="M120 120 L200 40 L280 120" />
-                        <path d="M220 120 L300 40 L380 120" />
-                    </svg>
 
-                </div>
+            <div className={`${DisplayMenuButton ? 'opacity-100' : 'opacity-0'} logo-wrapper`}>
+                <svg href='/'
+                    width={200}
+                    viewBox="0 0 400 150"
+                    className="logo cursor-pointer"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path d="M20 120 L100 40 L180 120" />
+                    <path d="M120 120 L200 40 L280 120" />
+                    <path d="M220 120 L300 40 L380 120" />
+                </svg>
+
             </div>
+
 
             <button
                 onClick={() => setOpen(!open)}

@@ -16,10 +16,10 @@ import FooterPage from "@/components/home/FooterPage";
 export default function Home() {
 
   return (
-    <div className="relative bg-[#202020] text-white">
+    <div className="relative h-[100dvh] md:h-screen bg-[#202020] text-white flex">
       <Menu />
       <SmoothScrollbar>
-        <div className="w-full h-screen  font-sans  text-white ">
+        <div className="w-full h-[100dvh] md:h-screen  font-sans  text-white ">
           <TitlePage />
           <ProfileInfoPage />
           <OurServicesPage />
