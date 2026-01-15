@@ -39,7 +39,7 @@ const OurServicesPage = () => {
     };
 
     return (
-        <div className="w-full min-h-screen py-16">
+        <div className="w-full bg-black min-h-screen py-16">
             <div className="flex flex-col gap-6">
                 <div className="w-[85%] mx-auto">
                     <span className="font-light">OUR SERVICES /</span>

@@ -3,6 +3,13 @@ import { useMenuStore } from '@/store/Menu-Store'
 import React from 'react'
 import { useState } from "react"
 
+// social icons
+import { IoLogoInstagram } from "react-icons/io5";
+import { FaFacebook } from "react-icons/fa6";
+import { FaYelp } from "react-icons/fa";
+import { BsLinkedin } from "react-icons/bs";
+
+
 const Menu = () => {
     const [open, setOpen] = useState(false)
     const DisplayMenuButton = useMenuStore((state) => state.DisplayMenuButton)
@@ -55,7 +62,23 @@ const Menu = () => {
                             <span className={`${index == 0 ? 'text-[#ffffff]' : 'text-[#828181]'} hover:text-[#ffffff] cursor-pointer`}>{item}</span>
                         </span>
                     ))}
+                    <div className='absolute  p-2 w-full bottom-10 z-50 flex items-center justify-center text-2xl lg:text-4xl gap-10 lg:gap-20'>
+                        <a href="https://www.facebook.com/MarciHomes/" target='_blank'>
+                            <FaFacebook />
+                        </a>
+                        <a href="https://www.instagram.com/marciandlauren_nvrealtors/" target='_blank'>
+                            <IoLogoInstagram />
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/marci-metzger-30642496/" target='_blank'>
+                            <BsLinkedin />
+                        </a>
+                        <a href="https://www.yelp.com/biz/marci-metzger-the-ridge-realty-pahrump" target='_blank'>
+                            <FaYelp />
+                        </a>
+                    </div>
                 </div>
+
             </div>
 
 
