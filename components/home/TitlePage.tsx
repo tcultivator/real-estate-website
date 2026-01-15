@@ -27,12 +27,12 @@ const TitlePage = () => {
                 </div>
             </div>
 
-            <div className='w-[95%] p-1 absolute bottom-5 flex px-3 items-center justify-between'>
-                <span className='flex items-center gap-2 uppercase text-white/50 text-xl'>
+            <div className='w-[95%] p-1 absolute bottom-5 flex px-3 items-center justify-center md:justify-between'>
+                <span className='flex flex-col justify-center md:flex-row items-center gap-2 uppercase text-white/50 text-sm lg:text-lg 2xl:text-xl'>
                     scroll down
                     <MdOutlineArrowDownward className='text-2xl'/>
                 </span>
-                <span className='uppercase text-white/50 text-xl'>
+                <span className='hidden md:block uppercase text-white/50 text-sm lg:text-lg 2xl:text-xl'>
                      Nevada, United States
                 </span>
             </div>
