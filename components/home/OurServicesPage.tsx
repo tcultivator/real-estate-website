@@ -116,9 +116,12 @@ const OurServicesPage = () => {
                                 {services[activeIndex].title}
                             </span>
                             <span className="text-center w-[95%] sm:w-[90%] md:w-[80%] mx-auto">{services[activeIndex].desc}</span>
-                            <span className="flex items-center gap-2 text-white bg-gradient-to-r from-primary via-secondary to-primary border border-white/30 px-6 py-3 rounded-[25px] mt-4">
-                                LEARN MORE <MdOutlineArrowForward className="text-2xl" />
-                            </span>
+                            <button
+                                type="button"
+                                className="px-10 py-4 border border-white text-white font-bold tracking-[0.15em] text-sm hover:bg-white hover:text-black active:bg-white active:text-black transition-all duration-300 uppercase"
+                            >
+                                Learn More
+                            </button>
                         </div>
 
                         {/* Slider Buttons */}
