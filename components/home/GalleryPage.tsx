@@ -15,18 +15,18 @@ const GallerPage = () => {
     ];
 
     return (
-        <div className='flex flex-col w-full py-16 gap-10'>
+        <div className='flex bg-white flex-col w-full py-16 gap-10'>
             <div className='w-[95%] mx-auto'>
-                <span className='text-2xl lg:text-4xl'>PHOTO GALLERY</span>
+                <span className='font-semibold text-2xl lg:text-4xl text-gray-700'>PHOTO GALLERY</span>
             </div>
             <section className="relative w-full  py-12 overflow-hidden ">
 
                 {/* Decorative Crosshairs */}
-                <div className="absolute left-4 top-4 md:left-8 md:top-8 z-20 pointer-events-none">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2"><path d="M12 4V20M4 12H20" /></svg>
+                <div className="absolute left-4 top-5 md:left-8 md:top-9 z-20 pointer-events-none">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="4"><path d="M12 4V20M4 12H20" /></svg>
                 </div>
-                <div className="absolute left-4 bottom-4 md:left-8 md:bottom-8 z-20 pointer-events-none">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2"><path d="M12 4V20M4 12H20" /></svg>
+                <div className="absolute left-4 bottom-5 md:left-8 md:bottom-9 z-20 pointer-events-none">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="4"><path d="M12 4V20M4 12H20" /></svg>
                 </div>
 
                 {/* --- UPDATED CLASS NAME: gallery-wrap --- */}
@@ -37,14 +37,14 @@ const GallerPage = () => {
 
                         {/* SET 1 */}
                         {images.map((img, index) => (
-                            <div key={`original-${index}`} className="relative h-[200px] opacity-90 md:h-[300px] lg:h-[400px] aspect-[4/3] md:aspect-video lg:aspect-[4/3] flex-shrink-0">
+                            <div key={`original-${index}`} className="relative h-[200px] opacity-100 md:h-[300px] lg:h-[400px] aspect-[4/3] md:aspect-video lg:aspect-[4/3] flex-shrink-0">
                                 <Image src={img.src} alt={img.alt} fill className="object-cover  transition-all duration-500 ease-in-out" />
                             </div>
                         ))}
 
                         {/* SET 2 */}
                         {images.map((img, index) => (
-                            <div key={`duplicate-${index}`} className="relative h-[200px] opacity-90 md:h-[300px] lg:h-[400px] aspect-[4/3] md:aspect-video lg:aspect-[4/3] flex-shrink-0">
+                            <div key={`duplicate-${index}`} className="relative h-[200px] opacity-100 md:h-[300px] lg:h-[400px] aspect-[4/3] md:aspect-video lg:aspect-[4/3] flex-shrink-0">
                                 <Image src={img.src} alt={img.alt} fill className="object-cover  transition-all duration-500 ease-in-out" />
                             </div>
                         ))}

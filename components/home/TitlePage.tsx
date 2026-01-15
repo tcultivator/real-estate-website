@@ -18,7 +18,7 @@ const TitlePage = () => {
                         Pahrump Realtor
                     </span>
                     <div className="mt-3 flex items-center gap-2">
-                        <a href="tel:(206) 919-6886" className="px-10 py-4 border border-white text-white font-bold tracking-[0.15em] text-sm hover:bg-white hover:text-black active:bg-white active:text-black transition-all duration-300 uppercase">
+                        <a href="tel:(206) 919-6886" className="line line-3 px-10 py-4 border border-white text-white font-bold tracking-[0.15em] text-sm hover:bg-white hover:text-black active:bg-white active:text-black transition-all duration-300 uppercase">
                             CALL NOW
                         </a>
 

@@ -164,7 +164,7 @@ const ContactPage = () => {
                             <div className="pt-4">
                                 <button
                                     type="button"
-                                    className="px-10 py-3 border border-white cursor-pointer text-white font-bold tracking-[0.15em] text-sm hover:bg-white hover:text-black active:bg-white active:text-black transition-all duration-300 uppercase"
+                                    className="w-full md:w-max px-10 py-3 border border-white cursor-pointer text-white font-bold tracking-[0.15em] text-sm hover:bg-white hover:text-black active:bg-white active:text-black transition-all duration-300 uppercase"
                                 >
                                     Submit
                                 </button>
