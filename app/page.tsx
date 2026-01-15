@@ -12,6 +12,7 @@ import TestimonialsPage from "@/components/home/TestimonialsPage";
 import SearchListPage from "@/components/home/SearchListPage";
 import GallerPage from "@/components/home/GalleryPage";
 import ContactPage from "@/components/home/ContactPage";
+import FooterPage from "@/components/home/FooterPage";
 export default function Home() {
 
   return (
@@ -29,6 +30,7 @@ export default function Home() {
           <SearchListPage />
           <GallerPage />
           <ContactPage />
+          <FooterPage />
         </div>
       </SmoothScrollbar >
     </div>
