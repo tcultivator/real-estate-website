@@ -8,6 +8,8 @@ import ProfileInfoPage from "@/components/home/ProfileInfoPage";
 import OurServicesPage from "@/components/home/OurServicesPage";
 import GetItSoldPage from "@/components/home/GetItSoldPage";
 import PartnersIconsPage from "@/components/home/PartnersIconsPage";
+import TestimonialsPage from "@/components/home/TestimonialsPage";
+import SearchListPage from "@/components/home/SearchListPage";
 export default function Home() {
 
   return (
@@ -18,9 +20,11 @@ export default function Home() {
           <TitlePage />
           <ProfileInfoPage />
           <OurServicesPage />
-          
-          <PartnersIconsPage/>
+
+          <PartnersIconsPage />
           <GetItSoldPage />
+          <TestimonialsPage />
+          <SearchListPage/>
         </div>
       </SmoothScrollbar >
     </div>

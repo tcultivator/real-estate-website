@@ -48,7 +48,7 @@ const Menu = () => {
             </button>
 
             <div
-                className={`fixed w-full h-full bg-[#202020] z-40 top-0 right-0 transition-transform duration-700 ease-in-out
+                className={`fixed w-full h-full bg-[#202020] z-40 top-0 right-0 transition-transform duration-1000 ease-in-out
     ${open ? "translate-y-0" : "translate-y-full"}`}
             >
                 <div className="flex flex-col gap-6 items-center justify-center h-full">
@@ -56,7 +56,7 @@ const Menu = () => {
                         <span
                             key={index}
                             onClick={() => setOpen(!open)}
-                            className={` text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-semibold transform transition-all duration-200
+                            className={` text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-semibold transform transition-all duration-250
           ${open ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"}`}
                             style={{
 
