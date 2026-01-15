@@ -54,6 +54,7 @@ const OurServicesPage = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
+            nextSlide()
             setImageIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1))
 
         }, 5000);
@@ -88,7 +89,7 @@ const OurServicesPage = () => {
                                 key={index}
                                 className="group flex flex-col gap-3 w-1/3 h-full p-2 justify-center items-center border-r-[4px] border-[#202020] transition-all duration-500 hover:bg-black/20 hover:backdrop-blur-sm cursor-pointer"
                             >
-                                <span className="font-playfair text-center text-2xl md:text-3xl font-semibold tracking-tight transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-y-3 [text-shadow:.5px_.5px_.5px_black] [-webkit-text-stroke:0.2px_black]">
+                                <span className="uppercase text-center text-2xl md:text-3xl font-semibold tracking-tight transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-y-3 [text-shadow:.5px_.5px_.5px_black] [-webkit-text-stroke:0.2px_black]">
                                     {item.title}
                                 </span>
 
