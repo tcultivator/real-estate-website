@@ -1,10 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { MdOutlineArrowForward } from "react-icons/md";
-import { IoMdArrowDropright } from "react-icons/io";
-import { IoMdArrowDropleft } from "react-icons/io";
+
 
 const services = [
     {
@@ -27,8 +26,23 @@ We make sure you feel confident and educated every step of the way.`,
     },
 ];
 
+const images = [
+    {
+        src: 'https://images.unsplash.com/photo-1670589953903-b4e2f17a70a9?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    }
+    ,
+    {
+        src: 'https://images.unsplash.com/photo-1513584684374-8bab748fbf90?q=80&w=2065&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    },
+    {
+        src: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    }
+]
+
 const OurServicesPage = () => {
     const [activeIndex, setActiveIndex] = useState(0);
+
+    const [imageIndex, setImageIndex] = useState(0)
 
     const prevSlide = () => {
         setActiveIndex((prev) => (prev === 0 ? services.length - 1 : prev - 1));
@@ -38,20 +52,30 @@ const OurServicesPage = () => {
         setActiveIndex((prev) => (prev === services.length - 1 ? 0 : prev + 1));
     };
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setImageIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1))
+
+        }, 5000);
+        return () => clearInterval(interval);
+    }, []);
+
+
     return (
         <div className="w-full bg-black min-h-screen py-16">
             <div className="flex flex-col gap-6">
-                <div className="w-[85%] mx-auto">
-                    <span className="font-light">OUR SERVICES /</span>
+                <div className="w-[85%] mx-auto flex items-center justify-center">
+                    <span className="font-semibold text-2xl">OUR SERVICES</span>
                 </div>
 
                 <div className="w-full relative h-[85vh]">
                     {/* Background Image */}
                     <div className="absolute inset-0 h-[85vh] overflow-hidden">
                         <Image
-                            src="/gg.webp"
+                            src={images[imageIndex].src}
                             alt=""
                             fill
+                            
                             className="object-cover animate-slow-zoom"
                             priority
                         />
@@ -94,23 +118,27 @@ const OurServicesPage = () => {
                         </div>
 
                         {/* Slider Buttons */}
-                        <div className="flex gap-4 absolute bottom-[-50px]">
+                        <div className="flex gap-4 absolute bottom-[-60px]">
                             <button
                                 onClick={prevSlide}
-                                className="bg-secondary hover:bg-primary active:bg-primary text-white p-1 rounded-lg"
+                                className="bg-white/10 hover:bg-white/20 active:bg-white/20 backdrop-blur-md text-white p-3 rounded-full"
                             >
-                                <IoMdArrowDropleft className="text-4xl"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                                </svg>
                             </button>
                             <div className="flex items-center gap-2">
-                                {services.map((data,index)=>(
-                                    <div key={index} className={`w-[10px] h-[10px]  ${activeIndex == index ? 'bg-secondary w-[20px] rounded-[10px]' : 'bg-white/50 backdrop-blur-md rounded-[50%]'}  h-[2px]`}></div>
+                                {services.map((data, index) => (
+                                    <div key={index} className={`w-[10px] h-[10px]  ${activeIndex == index ? 'bg-white w-[20px] rounded-[10px]' : 'bg-white/50 backdrop-blur-md rounded-[50%]'}  h-[2px]`}></div>
                                 ))}
                             </div>
                             <button
                                 onClick={nextSlide}
-                                className="bg-secondary hover:bg-primary active:bg-primary text-white p-1 rounded-lg"
+                                className="bg-white/10 hover:bg-white/20 active:bg-white/20 backdrop-blur-md text-white p-3 rounded-full"
                             >
-                                <IoMdArrowDropright className="text-4xl"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>
                             </button>
                         </div>
                     </div>
