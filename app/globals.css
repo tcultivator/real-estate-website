@@ -60,7 +60,7 @@
   z-index: 9999;
   animation: moveToTop 1s ease forwards;
   animation-delay: 1.5s;
- 
+
 }
 
 
@@ -264,9 +264,11 @@
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.1);
   }
+
   100% {
     transform: scale(1);
   }
@@ -298,8 +300,9 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
-    transform: translateX(-50%); 
+    transform: translateX(-50%);
   }
 }
 
@@ -314,13 +317,40 @@
 
 .ticker-track {
   display: flex;
-  width: max-content; 
-  animation: scroll-snake 25s linear infinite; 
+  width: max-content;
+  animation: scroll-snake 25s linear infinite;
 }
 
 
 .ticker-wrap:hover .ticker-track {
   animation-play-state: paused;
 }
+
+
+
+
+
+/* gallery photo animation */
+
+@keyframes gallery-scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+.gallery-track {
+  animation: gallery-scroll 80s linear infinite;
+}
+
+.gallery-wrap {
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
 
 
